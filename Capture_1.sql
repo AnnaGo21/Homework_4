@@ -16,7 +16,7 @@ SET half_index = CASE
 WHEN (invoice_date <= '2019-06-30') THEN 1  
 ELSE 2 END;
 
--- Remove invoice_date column; we don't need this any more
+-- Remove invoice_date column; we don't need this anymore
 alter table half_years_data drop column invoice_date;
 
 -- Display the result
